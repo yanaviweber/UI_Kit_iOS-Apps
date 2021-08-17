@@ -27,6 +27,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func choiceSegment(_ sender: UISegmentedControl) {
+        
+        
+        label.isHidden = false
+        
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            label.text = "The first segment is selected"
+            label.textColor = .red
+        case 1:
+            label.text = "The second segment is selected"
+            label.textColor = .blue
+        case 2:
+            label.text = "The third segment is selected"
+            label.textColor = .purple
+        default:
+            print("Something is wrong!")
+        }
+        
     }
     
 }
