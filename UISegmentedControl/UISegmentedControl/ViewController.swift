@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         label.textAlignment = .center
         label.numberOfLines = 2
         
-        segmentedControl.insertSegment(withTitle: "Thir", at: 2, animated: true)
+        segmentedControl.insertSegment(withTitle: "Third", at: 2, animated: true)
         
     }
 
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             label.textColor = .blue
         case 2:
             label.text = "The third segment is selected"
-            label.textColor = .purple
+            label.textColor = .yellow
         default:
             print("Something is wrong!")
         }
