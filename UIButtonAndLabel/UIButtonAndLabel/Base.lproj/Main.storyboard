@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0As-4Y-quC">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0As-4Y-quC">
                                 <rect key="frame" x="80" y="331" width="160" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="D5A-gF-mgi"/>
@@ -55,14 +55,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1g-2H-HEq">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1g-2H-HEq">
                                 <rect key="frame" x="80" y="269" width="160" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="a5g-1g-Be8"/>
                                 </constraints>
                                 <state key="normal" title="Action 2"/>
                                 <connections>
-                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EGU-7c-wn2"/>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4h-RA-YNc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-aT-vSW">
@@ -72,7 +72,7 @@
                                 </constraints>
                                 <state key="normal" title="Action 1"/>
                                 <connections>
-                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OnW-HP-GqZ"/>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngn-8N-88M"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -158,6 +158,8 @@
                     <connections>
                         <outlet property="button" destination="0As-4Y-quC" id="Gk1-XR-GWI"/>
                         <outlet property="label" destination="vcJ-DY-EfG" id="eWy-Dt-HeD"/>
+                        <outletCollection property="actionButtons" destination="bHk-aT-vSW" collectionClass="NSMutableArray" id="Ef5-3D-JxD"/>
+                        <outletCollection property="actionButtons" destination="F1g-2H-HEq" collectionClass="NSMutableArray" id="27n-XO-iIF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
