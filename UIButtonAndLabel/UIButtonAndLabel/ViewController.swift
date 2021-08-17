@@ -16,10 +16,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        label.isHidden = true
+        label.font = label.font.withSize(35)
+        label.textColor = UIColor.red
+        
     }
 
     @IBAction func pressedButton(_ sender: UIButton) {
+        
+        label.text = "Hello, World!"
     }
     
 }
