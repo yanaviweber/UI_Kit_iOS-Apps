@@ -16,7 +16,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        label.isHidden = true
+        label.font = label.font.withSize(35)
+        label.textAlignment = .center
+        label.numberOfLines = 2
+        
+        segmentedControl.insertSegment(withTitle: "Thir", at: 2, animated: true)
+        
     }
 
     @IBAction func choiceSegment(_ sender: UISegmentedControl) {
