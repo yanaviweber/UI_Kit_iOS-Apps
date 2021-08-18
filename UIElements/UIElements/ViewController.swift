@@ -67,6 +67,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func donePressed(_ sender: UIButton) {
+        
+        guard textField.text?.isEmpty == false else { return }
+        
+        if let _ = Double(textField.text!){
+            print("Name format is wrong")
+        } else {
+            label.text = textField.text
+
+        }
+            
     }
     
 }
