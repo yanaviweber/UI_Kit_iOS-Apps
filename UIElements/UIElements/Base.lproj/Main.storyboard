@@ -49,14 +49,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWn-Ra-NDn">
+                                <rect key="frame" x="91" y="442" width="232" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="uWn-Ra-NDn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="1fk-jA-1lw"/>
                             <constraint firstItem="CsD-ZU-WUj" firstAttribute="top" secondItem="IPx-bv-chH" secondAttribute="bottom" constant="54" id="3az-uP-rsw"/>
                             <constraint firstItem="uge-Dc-qVo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="3mB-Kj-kuB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CsD-ZU-WUj" secondAttribute="trailing" constant="91" id="4c6-D5-MvC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IPx-bv-chH" secondAttribute="trailing" constant="91" id="5Kd-7M-w2g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uWn-Ra-NDn" secondAttribute="trailing" constant="91" id="5T3-ah-Df2"/>
                             <constraint firstItem="uge-Dc-qVo" firstAttribute="top" secondItem="KTO-dT-Juh" secondAttribute="bottom" constant="64" id="GK7-a6-z5r"/>
                             <constraint firstItem="IPx-bv-chH" firstAttribute="top" secondItem="uge-Dc-qVo" secondAttribute="bottom" constant="31.5" id="Ieg-zK-FOf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uge-Dc-qVo" secondAttribute="trailing" constant="58" id="UOd-I1-QtN"/>
@@ -65,6 +71,7 @@
                             <constraint firstItem="IPx-bv-chH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="g8D-Iz-sLc"/>
                             <constraint firstItem="CsD-ZU-WUj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="hSs-xs-W3i"/>
                             <constraint firstItem="KTO-dT-Juh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="jVE-ZM-X3u"/>
+                            <constraint firstItem="uWn-Ra-NDn" firstAttribute="top" secondItem="CsD-ZU-WUj" secondAttribute="bottom" constant="51" id="xJp-vq-HlK"/>
                         </constraints>
                     </view>
                     <connections>
