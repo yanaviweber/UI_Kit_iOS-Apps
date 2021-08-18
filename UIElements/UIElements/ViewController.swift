@@ -8,10 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var slider: UISlider!
     
     
     override func viewDidLoad() {
@@ -47,4 +49,6 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func sliderAction(_ sender: UISlider) {
+    }
 }
