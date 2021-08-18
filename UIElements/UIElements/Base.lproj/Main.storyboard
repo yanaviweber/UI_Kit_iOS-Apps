@@ -35,15 +35,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IPx-bv-chH">
+                                <rect key="frame" x="89" y="273" width="236" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hUw-Pl-3jB"/>
+                                </constraints>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="uge-Dc-qVo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="3mB-Kj-kuB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IPx-bv-chH" secondAttribute="trailing" constant="91" id="5Kd-7M-w2g"/>
                             <constraint firstItem="uge-Dc-qVo" firstAttribute="top" secondItem="KTO-dT-Juh" secondAttribute="bottom" constant="64" id="GK7-a6-z5r"/>
+                            <constraint firstItem="IPx-bv-chH" firstAttribute="top" secondItem="uge-Dc-qVo" secondAttribute="bottom" constant="31.5" id="Ieg-zK-FOf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uge-Dc-qVo" secondAttribute="trailing" constant="58" id="UOd-I1-QtN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KTO-dT-Juh" secondAttribute="trailing" constant="91" id="c3U-wA-XyF"/>
                             <constraint firstItem="KTO-dT-Juh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="fRB-wJ-dwB"/>
+                            <constraint firstItem="IPx-bv-chH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="g8D-Iz-sLc"/>
                             <constraint firstItem="KTO-dT-Juh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="jVE-ZM-X3u"/>
                         </constraints>
                     </view>
