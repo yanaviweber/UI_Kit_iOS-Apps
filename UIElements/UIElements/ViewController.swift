@@ -28,8 +28,8 @@ class ViewController: UIViewController {
         
         segmentedControl.insertSegment(withTitle: "Third", at: 2, animated: true)
         
-        slider.minimumValue = 1
-        slider.maximumValue = 100
+        slider.minimumValue = 0
+        slider.maximumValue = 1
         slider.minimumTrackTintColor = .yellow
         slider.maximumTrackTintColor = .red
         slider.thumbTintColor = .blue
@@ -58,6 +58,9 @@ class ViewController: UIViewController {
     
     @IBAction func sliderAction(_ sender: UISlider) {
         label.text = String(sender.value)
+        
+        let backgroundColor = self.view.backgroundColor
+        self.view.backgroundColor = backgroundColor?.withAlphaComponent(CGFloat(sender.value))
         
     }
 }
