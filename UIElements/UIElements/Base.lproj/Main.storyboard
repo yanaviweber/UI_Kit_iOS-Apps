@@ -54,6 +54,9 @@
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rRm-6l-839"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -80,6 +83,7 @@
                         <outlet property="label" destination="uge-Dc-qVo" id="Zp1-KA-ZiG"/>
                         <outlet property="segmentedControl" destination="KTO-dT-Juh" id="5WA-la-mPD"/>
                         <outlet property="slider" destination="IPx-bv-chH" id="kKN-95-mf7"/>
+                        <outlet property="textField" destination="CsD-ZU-WUj" id="eUF-Vg-Hcd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

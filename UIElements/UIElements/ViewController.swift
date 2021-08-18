@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var slider: UISlider!
     
+    @IBOutlet weak var textField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,4 +65,8 @@ class ViewController: UIViewController {
         self.view.backgroundColor = backgroundColor?.withAlphaComponent(CGFloat(sender.value))
         
     }
+    
+    @IBAction func donePressed(_ sender: UIButton) {
+    }
+    
 }
