@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +85,10 @@ class ViewController: UIViewController {
             textField.text = nil
         }
             
+    }
+    
+    
+    @IBAction func changeDate(_ sender: UIDatePicker) {
     }
     
 }

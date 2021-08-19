@@ -75,6 +75,9 @@
                                             <constraint firstAttribute="height" constant="162" id="Hbj-pP-6Qd"/>
                                         </constraints>
                                         <locale key="locale" localeIdentifier="ru"/>
+                                        <connections>
+                                            <action selector="changeDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="Y2G-NW-U5Q"/>
+                                        </connections>
                                     </datePicker>
                                 </subviews>
                                 <constraints>
@@ -112,6 +115,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
+                        <outlet property="datePicker" destination="pV1-xh-Op3" id="O1L-bh-Nd4"/>
                         <outlet property="label" destination="uge-Dc-qVo" id="Zp1-KA-ZiG"/>
                         <outlet property="segmentedControl" destination="KTO-dT-Juh" id="5WA-la-mPD"/>
                         <outlet property="slider" destination="IPx-bv-chH" id="kKN-95-mf7"/>
