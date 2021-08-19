@@ -89,6 +89,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func changeDate(_ sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .full
+        
+        let dateValue = dateFormatter.string(from: sender.date)
+        label.text = dateValue
+        
     }
     
 }
