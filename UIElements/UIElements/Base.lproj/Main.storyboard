@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gO-90-NOi">
-                                <rect key="frame" x="20" y="57" width="374" height="809"/>
+                                <rect key="frame" x="20" y="13" width="374" height="887"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uge-Dc-qVo">
                                         <rect key="frame" x="29" y="103" width="316" height="21"/>
@@ -69,9 +69,15 @@
                                             <action selector="choiceSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="XsZ-79-30u"/>
                                         </connections>
                                     </segmentedControl>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="pV1-xh-Op3">
+                                        <rect key="frame" x="0.0" y="531" width="374" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="162" id="Hbj-pP-6Qd"/>
+                                        </constraints>
+                                        <locale key="locale" localeIdentifier="ru"/>
+                                    </datePicker>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="uWn-Ra-NDn" secondAttribute="bottom" constant="445" id="2Yt-M5-mCE"/>
                                     <constraint firstItem="CsD-ZU-WUj" firstAttribute="leading" secondItem="uWn-Ra-NDn" secondAttribute="leading" id="2ue-Bl-wfF"/>
                                     <constraint firstItem="KTO-dT-Juh" firstAttribute="top" secondItem="8gO-90-NOi" secondAttribute="top" constant="31" id="B7r-Ec-Qwo"/>
                                     <constraint firstAttribute="trailing" secondItem="uge-Dc-qVo" secondAttribute="trailing" constant="29" id="BvQ-W9-3wS"/>
@@ -81,7 +87,9 @@
                                     <constraint firstItem="uge-Dc-qVo" firstAttribute="centerX" secondItem="8gO-90-NOi" secondAttribute="centerX" id="OEe-bb-WTn"/>
                                     <constraint firstItem="IPx-bv-chH" firstAttribute="leading" secondItem="CsD-ZU-WUj" secondAttribute="leading" id="PqU-D4-frc"/>
                                     <constraint firstItem="IPx-bv-chH" firstAttribute="top" secondItem="uge-Dc-qVo" secondAttribute="bottom" constant="43" id="T8D-Vc-Nog"/>
+                                    <constraint firstItem="pV1-xh-Op3" firstAttribute="top" secondItem="uWn-Ra-NDn" secondAttribute="bottom" constant="167" id="ULW-hg-cay"/>
                                     <constraint firstItem="CsD-ZU-WUj" firstAttribute="centerX" secondItem="8gO-90-NOi" secondAttribute="centerX" id="jcy-gU-vqv"/>
+                                    <constraint firstAttribute="bottom" secondItem="pV1-xh-Op3" secondAttribute="bottom" constant="194" id="kmD-e1-Dfi"/>
                                     <constraint firstItem="IPx-bv-chH" firstAttribute="centerX" secondItem="8gO-90-NOi" secondAttribute="centerX" id="mtJ-pk-jQm"/>
                                     <constraint firstItem="uge-Dc-qVo" firstAttribute="top" secondItem="KTO-dT-Juh" secondAttribute="bottom" constant="41" id="qMb-zR-A1J"/>
                                     <constraint firstItem="KTO-dT-Juh" firstAttribute="leading" secondItem="IPx-bv-chH" secondAttribute="leading" id="uiI-Et-8JE"/>
@@ -97,7 +105,9 @@
                             <constraint firstItem="8gO-90-NOi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3hl-Kp-9dE"/>
                             <constraint firstItem="8gO-90-NOi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7lX-bZ-dZf"/>
                             <constraint firstItem="8gO-90-NOi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="KoK-ia-9KE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pV1-xh-Op3" secondAttribute="trailing" constant="20" id="UuP-ua-5sf"/>
                             <constraint firstItem="8gO-90-NOi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jTY-vb-ON2"/>
+                            <constraint firstItem="pV1-xh-Op3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pM4-nx-dNP"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="900"/>
