@@ -36,6 +36,9 @@ class ViewController: UIViewController {
         slider.minimumTrackTintColor = .yellow
         slider.maximumTrackTintColor = .red
         slider.thumbTintColor = .blue
+        
+        datePicker.locale = Locale(identifier: "ru_Ru")
+        
     }
 
     @IBAction func choiceSegment(_ sender: UISegmentedControl) {

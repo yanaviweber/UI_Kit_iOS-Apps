@@ -70,7 +70,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="162" id="Hbj-pP-6Qd"/>
                                         </constraints>
-                                        <locale key="locale" localeIdentifier="ru"/>
                                         <connections>
                                             <action selector="changeDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="Y2G-NW-U5Q"/>
                                         </connections>
