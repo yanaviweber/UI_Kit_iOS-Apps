@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
    /* ----- START -----  Properties and Array for UIPickerView   */
     
-    var uiElements = ["UISegmntedControl",
+    var uiElements = ["UISegmentedControl",
                 "UILabel",
                 "UISlider",
                 "UITextField",
@@ -59,6 +59,7 @@ class ViewController: UIViewController {
         
         choiceUiElement()
         
+        createToolbar()
     }
     
     /* ----- START ----- Functions for working with all elements in the interface in the select by UIPickerView */
@@ -69,6 +70,9 @@ class ViewController: UIViewController {
         
         textField.inputView = elementPicker
         
+        // Customization
+        elementPicker.backgroundColor = .systemOrange
+        
     }
     
     func hideAllElements() {
@@ -78,6 +82,30 @@ class ViewController: UIViewController {
         doneButton.isHidden = true
         datePicker.isHidden = true
     }
+    
+    
+    // Create new button for the dismiss of UIPickerView
+    
+    func createToolbar() {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissKeyboard))
+        toolbar.setItems([doneButton], animated: true)
+        toolbar.isUserInteractionEnabled = true
+        
+        textField.inputAccessoryView = toolbar
+        
+        // Customization
+        toolbar.tintColor = .white
+        toolbar.barTintColor = .systemOrange
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     /* ----- END ----- functions of UIPickerView */
 
     
@@ -200,8 +228,50 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         selectedElement = uiElements[row]
         textField.text = selectedElement
         
-        
+        switch row {
+        case 0:
+            hideAllElements()
+            segmentedControl.isHidden = false
+        case 1:
+            hideAllElements()
+            label.isHidden = false
+        case 2:
+            hideAllElements()
+            slider.isHidden = false
+        case 3:
+            hideAllElements()
+        case 4:
+            hideAllElements()
+            doneButton.isHidden = false
+        case 5:
+            hideAllElements()
+            datePicker.isHidden = false
+        default:
+            hideAllElements()
+        }
     }
+    
+    func pickerView(_ pickerView: UIPickerView,
+                    viewForRow row: Int,
+                    forComponent component: Int,
+                    reusing view: UIView?) -> UIView {
+        
+        var pickerViewLabel = UILabel()
+        
+        if let currentLabel = view as? UILabel {
+            pickerViewLabel = currentLabel
+        } else {
+            pickerViewLabel = UILabel()
+        }
+        
+        pickerViewLabel.textColor = .white
+        pickerViewLabel.textAlignment = .center
+        pickerViewLabel.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 23)
+        pickerViewLabel.text = uiElements[row]
+        
+        return pickerViewLabel
+    }
+    
 }
 
 /* ----- END ----- Implementation of the logic UIPickerView */
