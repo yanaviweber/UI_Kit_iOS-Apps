@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         textField.inputView = elementPicker
         
         // Customization
-        elementPicker.backgroundColor = .systemOrange
+        elementPicker.backgroundColor = .systemPurple
         
     }
     
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
         
         // Customization
         toolbar.tintColor = .white
-        toolbar.barTintColor = .systemOrange
+        toolbar.barTintColor = .systemPurple
         
     }
     
