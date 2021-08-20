@@ -23,6 +23,15 @@ class ViewController: UIViewController {
         textView.layer.cornerRadius = 10
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        self.view.endEditing(true) // Hiding the keyboard called for any object
+        
+        // textView.resignFirstResponder()  // Hiding the keyboard called for a specific object
+        
+    }
 
 
 }
