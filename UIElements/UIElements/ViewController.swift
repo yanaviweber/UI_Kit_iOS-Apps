@@ -9,6 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
+   /* ----- START -----  Properties and Array for UIPickerView   */
+    
+    var uiElements = ["UISegmntedControl",
+                "UILabel",
+                "UISlider",
+                "UITextField",
+                "UIButton",
+                "UIDatePicker"]
+    
+    var selectedElement: String?
+    
+    /* ----- END -----  uiElements, selecteView in the UIPickerView   */
+    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     @IBOutlet weak var label: UILabel!
@@ -44,10 +57,32 @@ class ViewController: UIViewController {
         
         datePicker.locale = Locale(identifier: "ru_Ru")
         
-    }
-
-    @IBAction func choiceSegment(_ sender: UISegmentedControl) {
+        choiceUiElement()
         
+    }
+    
+    /* ----- START ----- Functions for working with all elements in the interface in the select by UIPickerView */
+    
+    func choiceUiElement() {
+        let elementPicker = UIPickerView()
+        elementPicker.delegate = self
+        
+        textField.inputView = elementPicker
+        
+    }
+    
+    func hideAllElements() {
+        segmentedControl.isHidden = true
+        label.isHidden = true
+        slider.isHidden = true
+        doneButton.isHidden = true
+        datePicker.isHidden = true
+    }
+    /* ----- END ----- functions of UIPickerView */
+
+    
+   /* ----- START -----  This element shows selected item and text of this selected item */
+    @IBAction func choiceSegment(_ sender: UISegmentedControl) {
         
         label.isHidden = false
         
@@ -66,6 +101,10 @@ class ViewController: UIViewController {
         }
         
     }
+   
+    /* ----- END -----  choiceSegment in the UISegmentedControl */
+    
+    /* ----- START -----  This element shows level of transparency of the all screen */
     
     @IBAction func sliderAction(_ sender: UISlider) {
         label.text = String(sender.value)
@@ -74,6 +113,11 @@ class ViewController: UIViewController {
         self.view.backgroundColor = backgroundColor?.withAlphaComponent(CGFloat(sender.value))
         
     }
+ 
+    /* ----- END -----  sliderAction in the UISlider */
+    
+    
+    /* ----- START -----  This element interacts with UITextField and UILabel: enter data in the text field and output them in the label after click button */
     
     @IBAction func donePressed(_ sender: UIButton) {
         
@@ -95,6 +139,10 @@ class ViewController: UIViewController {
             
     }
     
+    /* ----- END -----  donePressed in the UIButton */
+    
+    
+    /* ----- START -----  This element helps to select date in the UIDatePicker and after choice it shows this date in the UILabel */
     
     @IBAction func changeDate(_ sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
@@ -106,7 +154,9 @@ class ViewController: UIViewController {
         label.text = dateValue
         
     }
+    /* ----- END -----  changeDate in the UIDatePicker */
     
+    /* ----- START ----- This element turns off or turns on the all elements in the screen  */
     
     @IBAction func switchAction(_ sender: UISwitch) {
         
@@ -129,3 +179,29 @@ class ViewController: UIViewController {
     }
     
 }
+/* ----- END ----- switchAction in the UISwitch  */
+
+/* ----- START ----- Implementation of the logic UIPickerView */
+
+extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return uiElements.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return uiElements[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedElement = uiElements[row]
+        textField.text = selectedElement
+        
+        
+    }
+}
+
+/* ----- END ----- Implementation of the logic UIPickerView */
