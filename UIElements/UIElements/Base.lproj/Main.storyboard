@@ -78,6 +78,9 @@
                                         <rect key="frame" x="316" y="729" width="51" height="31"/>
                                         <color key="onTintColor" systemColor="systemRedColor"/>
                                         <color key="thumbTintColor" systemColor="systemBlueColor"/>
+                                        <connections>
+                                            <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="vfA-cK-IdX"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скрыть все элементы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pp1-Bq-ZmD">
                                         <rect key="frame" x="8" y="729" width="288" height="31"/>
@@ -132,9 +135,11 @@
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
                         <outlet property="datePicker" destination="pV1-xh-Op3" id="O1L-bh-Nd4"/>
+                        <outlet property="doneButton" destination="uWn-Ra-NDn" id="vEj-lT-KGn"/>
                         <outlet property="label" destination="uge-Dc-qVo" id="Zp1-KA-ZiG"/>
                         <outlet property="segmentedControl" destination="KTO-dT-Juh" id="5WA-la-mPD"/>
                         <outlet property="slider" destination="IPx-bv-chH" id="kKN-95-mf7"/>
+                        <outlet property="switchLabel" destination="Pp1-Bq-ZmD" id="h4o-ll-qD7"/>
                         <outlet property="textField" destination="CsD-ZU-WUj" id="eUF-Vg-Hcd"/>
                     </connections>
                 </viewController>
