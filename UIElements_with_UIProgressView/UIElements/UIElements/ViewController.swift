@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var textViewButtonConstraint: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,16 @@ class ViewController: UIViewController {
         textView.backgroundColor = self.view.backgroundColor
         textView.layer.cornerRadius = 10
         
+        // methods that contain observers controlling the display and hiding of the keyboard
+        NotificationCenter.default.addObserver(self,
+                    selector: #selector(updateTextView(notification: )),
+                    name: UIResponder.keyboardWillShowNotification,
+                    object: nil)
+        
+        NotificationCenter.default.addObserver(self,
+                    selector: #selector(updateTextView(notification: )),
+                    name: UIResponder.keyboardWillHideNotification,
+                    object: nil)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -33,6 +46,24 @@ class ViewController: UIViewController {
         
     }
 
+    @objc func updateTextView(notification: Notification) {
+        guard
+            let userInfo = notification.userInfo as? [String: Any],
+            let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+        else { return }
+        
+        if notification.name == UIResponder.keyboardWillHideNotification {
+            textView.contentInset = UIEdgeInsets.zero
+        } else {
+            textView.contentInset = UIEdgeInsets(top: 0,
+                                                 left: 0,
+                                                 bottom: keyboardFrame.height - textViewButtonConstraint.constant,
+                                                 right: 0)
+            textView.scrollIndicatorInsets = textView.contentInset
+        }
+        
+        textView.scrollRangeToVisible(textView.selectedRange)
+    }
 
 }
 

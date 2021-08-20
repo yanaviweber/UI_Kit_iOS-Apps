@@ -49,6 +49,7 @@ The appearance of the keyboard itself can be customized using the properties pro
                     <connections>
                         <outlet property="countLabel" destination="Vkb-du-Q3k" id="ZFh-WU-2nL"/>
                         <outlet property="textView" destination="hKU-YO-NuK" id="ypN-Vj-5e6"/>
+                        <outlet property="textViewButtonConstraint" destination="5PX-pM-6Ld" id="Qzk-08-R2y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
