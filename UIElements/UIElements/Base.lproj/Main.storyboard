@@ -74,13 +74,28 @@
                                             <action selector="changeDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="Y2G-NW-U5Q"/>
                                         </connections>
                                     </datePicker>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qh9-Os-f2h">
+                                        <rect key="frame" x="316" y="729" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="systemRedColor"/>
+                                        <color key="thumbTintColor" systemColor="systemBlueColor"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скрыть все элементы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pp1-Bq-ZmD">
+                                        <rect key="frame" x="8" y="729" width="288" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Pp1-Bq-ZmD" firstAttribute="top" secondItem="pV1-xh-Op3" secondAttribute="bottom" constant="84" id="6a8-yh-tWS"/>
                                     <constraint firstItem="uge-Dc-qVo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8gO-90-NOi" secondAttribute="leading" constant="20" id="CTp-BP-8lI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pp1-Bq-ZmD" secondAttribute="bottom" constant="127" id="F3n-Rm-HQA"/>
                                     <constraint firstItem="CsD-ZU-WUj" firstAttribute="centerX" secondItem="8gO-90-NOi" secondAttribute="centerX" id="HZ7-A7-9Ii"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qh9-Os-f2h" secondAttribute="trailing" constant="8" id="LCF-vm-IZ4"/>
                                     <constraint firstItem="KTO-dT-Juh" firstAttribute="top" secondItem="8gO-90-NOi" secondAttribute="top" constant="31" id="LLg-GP-xJR"/>
                                     <constraint firstItem="KTO-dT-Juh" firstAttribute="leading" secondItem="IPx-bv-chH" secondAttribute="leading" id="LSo-9o-hXe"/>
                                     <constraint firstItem="uge-Dc-qVo" firstAttribute="leading" secondItem="ZFE-hs-ZpR" secondAttribute="leading" constant="20" id="MfJ-ng-UqQ"/>
+                                    <constraint firstItem="Qh9-Os-f2h" firstAttribute="leading" secondItem="Pp1-Bq-ZmD" secondAttribute="trailing" constant="20" id="Pft-cf-bVu"/>
                                     <constraint firstItem="pV1-xh-Op3" firstAttribute="top" secondItem="uWn-Ra-NDn" secondAttribute="bottom" constant="122" id="ULW-hg-cay"/>
                                     <constraint firstItem="uge-Dc-qVo" firstAttribute="top" secondItem="KTO-dT-Juh" secondAttribute="bottom" constant="41" id="Z0E-4x-cF7"/>
                                     <constraint firstItem="IPx-bv-chH" firstAttribute="top" secondItem="uge-Dc-qVo" secondAttribute="bottom" constant="42.666666666666671" id="amQ-bf-RcJ"/>
@@ -93,8 +108,11 @@
                                     <constraint firstItem="KTO-dT-Juh" firstAttribute="centerX" secondItem="8gO-90-NOi" secondAttribute="centerX" id="lpQ-T6-LbC"/>
                                     <constraint firstItem="CsD-ZU-WUj" firstAttribute="leading" secondItem="uWn-Ra-NDn" secondAttribute="leading" id="lqP-Sz-Ecf"/>
                                     <constraint firstAttribute="trailing" secondItem="uge-Dc-qVo" secondAttribute="trailing" constant="19" id="soS-cU-mVh"/>
+                                    <constraint firstItem="Pp1-Bq-ZmD" firstAttribute="leading" secondItem="8gO-90-NOi" secondAttribute="leading" constant="8" id="uAK-fP-6Xt"/>
                                     <constraint firstItem="CsD-ZU-WUj" firstAttribute="top" secondItem="IPx-bv-chH" secondAttribute="bottom" constant="49" id="uL0-TG-Apf"/>
                                     <constraint firstItem="IPx-bv-chH" firstAttribute="leading" secondItem="CsD-ZU-WUj" secondAttribute="leading" id="uRs-4i-O5E"/>
+                                    <constraint firstItem="Qh9-Os-f2h" firstAttribute="top" secondItem="pV1-xh-Op3" secondAttribute="bottom" constant="84" id="wJA-pj-px7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qh9-Os-f2h" secondAttribute="bottom" constant="127" id="zKt-vg-1Cw"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uge-Dc-qVo" secondAttribute="trailing" constant="19" id="zjE-z9-0pI"/>
                                     <constraint firstItem="IPx-bv-chH" firstAttribute="centerX" secondItem="8gO-90-NOi" secondAttribute="centerX" id="zoj-Ja-UGk"/>
                                 </constraints>
@@ -134,6 +152,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
