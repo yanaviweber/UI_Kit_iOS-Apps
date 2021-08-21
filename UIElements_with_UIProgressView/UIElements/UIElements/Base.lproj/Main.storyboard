@@ -60,6 +60,7 @@ The appearance of the keyboard itself can be customized using the properties pro
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="vkX-23-d2U" id="6dX-s6-ge8"/>
                         <outlet property="countLabel" destination="Vkb-du-Q3k" id="ZFh-WU-2nL"/>
                         <outlet property="stepper" destination="FCP-e3-OBT" id="1av-yw-nwG"/>
                         <outlet property="textView" destination="hKU-YO-NuK" id="ypN-Vj-5e6"/>

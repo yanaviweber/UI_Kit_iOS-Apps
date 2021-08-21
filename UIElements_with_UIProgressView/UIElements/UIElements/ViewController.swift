@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var stepper: UIStepper!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
     override func viewDidLoad() {
