@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textViewButtonConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var stepper: UIStepper!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +69,11 @@ class ViewController: UIViewController {
         
         textView.scrollRangeToVisible(textView.selectedRange)
     }
-
+    
+    
+    @IBAction func sizeFont(_ sender: UIStepper) {
+    }
+    
 }
 
 extension ViewController: UITextViewDelegate {

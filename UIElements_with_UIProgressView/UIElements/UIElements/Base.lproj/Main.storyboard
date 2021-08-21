@@ -33,6 +33,12 @@ The appearance of the keyboard itself can be customized using the properties pro
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="FCP-e3-OBT">
+                                <rect key="frame" x="300" y="68" width="94" height="32"/>
+                                <connections>
+                                    <action selector="sizeFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="5U1-oe-V9B"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -40,7 +46,9 @@ The appearance of the keyboard itself can be customized using the properties pro
                             <constraint firstItem="Vkb-du-Q3k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="0RH-zP-3Lc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKU-YO-NuK" secondAttribute="trailing" constant="20" id="5Bl-Gf-mZS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hKU-YO-NuK" secondAttribute="bottom" constant="144" id="5PX-pM-6Ld"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FCP-e3-OBT" secondAttribute="trailing" constant="20" id="Ayj-Ti-jLH"/>
                             <constraint firstItem="hKU-YO-NuK" firstAttribute="top" secondItem="Vkb-du-Q3k" secondAttribute="bottom" constant="66" id="MIW-Oe-09k"/>
+                            <constraint firstItem="FCP-e3-OBT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="V6z-Pk-qpd"/>
                             <constraint firstItem="hKU-YO-NuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fZK-Ph-01a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Vkb-du-Q3k" secondAttribute="trailing" constant="352" id="r93-3N-nKh"/>
                             <constraint firstItem="Vkb-du-Q3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wcv-Nc-2y4"/>
@@ -48,6 +56,7 @@ The appearance of the keyboard itself can be customized using the properties pro
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="Vkb-du-Q3k" id="ZFh-WU-2nL"/>
+                        <outlet property="stepper" destination="FCP-e3-OBT" id="1av-yw-nwG"/>
                         <outlet property="textView" destination="hKU-YO-NuK" id="ypN-Vj-5e6"/>
                         <outlet property="textViewButtonConstraint" destination="5PX-pM-6Ld" id="Qzk-08-R2y"/>
                     </connections>
