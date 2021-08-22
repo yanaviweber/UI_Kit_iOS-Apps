@@ -42,6 +42,9 @@ The appearance of the keyboard itself can be customized using the properties pro
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="vkX-23-d2U">
                                 <rect key="frame" x="197" y="358" width="20" height="20"/>
                             </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6zE-sP-Zxw">
+                                <rect key="frame" x="20" y="161" width="374" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -51,10 +54,13 @@ The appearance of the keyboard itself can be customized using the properties pro
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKU-YO-NuK" secondAttribute="trailing" constant="20" id="5Bl-Gf-mZS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hKU-YO-NuK" secondAttribute="bottom" constant="144" id="5PX-pM-6Ld"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FCP-e3-OBT" secondAttribute="trailing" constant="20" id="Ayj-Ti-jLH"/>
+                            <constraint firstItem="6zE-sP-Zxw" firstAttribute="centerX" secondItem="hKU-YO-NuK" secondAttribute="centerX" id="IBi-KL-MzH"/>
                             <constraint firstItem="hKU-YO-NuK" firstAttribute="top" secondItem="Vkb-du-Q3k" secondAttribute="bottom" constant="66" id="MIW-Oe-09k"/>
                             <constraint firstItem="FCP-e3-OBT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="V6z-Pk-qpd"/>
                             <constraint firstItem="hKU-YO-NuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fZK-Ph-01a"/>
+                            <constraint firstItem="6zE-sP-Zxw" firstAttribute="top" secondItem="hKU-YO-NuK" secondAttribute="top" id="jCx-8h-lwh"/>
                             <constraint firstItem="vkX-23-d2U" firstAttribute="centerX" secondItem="hKU-YO-NuK" secondAttribute="centerX" id="kH5-0Q-hEI"/>
+                            <constraint firstItem="6zE-sP-Zxw" firstAttribute="width" secondItem="hKU-YO-NuK" secondAttribute="width" id="mR0-rB-bXG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Vkb-du-Q3k" secondAttribute="trailing" constant="352" id="r93-3N-nKh"/>
                             <constraint firstItem="Vkb-du-Q3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wcv-Nc-2y4"/>
                         </constraints>
@@ -62,6 +68,7 @@ The appearance of the keyboard itself can be customized using the properties pro
                     <connections>
                         <outlet property="activityIndicator" destination="vkX-23-d2U" id="6dX-s6-ge8"/>
                         <outlet property="countLabel" destination="Vkb-du-Q3k" id="ZFh-WU-2nL"/>
+                        <outlet property="progressView" destination="hKU-YO-NuK" id="mcB-T2-iLM"/>
                         <outlet property="stepper" destination="FCP-e3-OBT" id="1av-yw-nwG"/>
                         <outlet property="textView" destination="hKU-YO-NuK" id="ypN-Vj-5e6"/>
                         <outlet property="textViewButtonConstraint" destination="5PX-pM-6Ld" id="Qzk-08-R2y"/>

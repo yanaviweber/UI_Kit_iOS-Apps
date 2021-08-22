@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var progressView: UITextView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
