@@ -68,7 +68,7 @@ The appearance of the keyboard itself can be customized using the properties pro
                     <connections>
                         <outlet property="activityIndicator" destination="vkX-23-d2U" id="6dX-s6-ge8"/>
                         <outlet property="countLabel" destination="Vkb-du-Q3k" id="ZFh-WU-2nL"/>
-                        <outlet property="progressView" destination="hKU-YO-NuK" id="mcB-T2-iLM"/>
+                        <outlet property="progressView" destination="6zE-sP-Zxw" id="5UK-Sj-sFV"/>
                         <outlet property="stepper" destination="FCP-e3-OBT" id="1av-yw-nwG"/>
                         <outlet property="textView" destination="hKU-YO-NuK" id="ypN-Vj-5e6"/>
                         <outlet property="textViewButtonConstraint" destination="5PX-pM-6Ld" id="Qzk-08-R2y"/>

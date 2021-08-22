@@ -13,13 +13,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
-    @IBOutlet weak var textViewButtonConstraint: NSLayoutConstraint!
+    @IBOutlet weak var textViewButtonConstraint: NSLayoutConstraint! // bottomConstraint
     
     @IBOutlet weak var stepper: UIStepper!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    @IBOutlet weak var progressView: UITextView!
+    @IBOutlet weak var progressView: UIProgressView!
     
     
     
@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         textView.delegate = self
         
         textView.isHidden = true
-        textView.alpha = 0
         
         textView.text = "Enter your text"
         textView.textColor = .black
@@ -55,9 +54,14 @@ class ViewController: UIViewController {
         activityIndicator.color = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
         activityIndicator.startAnimating()
         
+        
         //UIApplication.shared.beginIgnoringInteractionEvents() - it isn't support by Apple
         // This method supported by Apple instead the method beginIgnoringInteractionEvents()
         self.view.isUserInteractionEnabled = false
+        
+        
+        progressView.setProgress(0, animated: true)
+        
         
         
         // method which contains observers controlling the display of the keyboard
@@ -73,14 +77,17 @@ class ViewController: UIViewController {
                     object: nil)
         
         
-        // method which controls duration of animation for the UIActivityIndicator
-        UIView.animate(withDuration: 0, delay: 5, options: .curveEaseIn, animations: {
-            self.textView.alpha = 1
-        }) { (finished) in
-            self.activityIndicator.stopAnimating()
-            self.textView.isHidden = false
-            self.view.isUserInteractionEnabled = true
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            if self.progressView.progress != 1 {
+                self.progressView.progress += 0.2
+            } else {
+                self.activityIndicator.stopAnimating()
+                self.textView.isHidden = false
+                self.view.isUserInteractionEnabled = true
+                self.progressView.isHidden = true
+            }
         }
+        
 
     }
     
