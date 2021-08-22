@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
-    @IBOutlet weak var textViewButtonConstraint: NSLayoutConstraint! // bottomConstraint
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var stepper: UIStepper!
     
@@ -112,7 +112,7 @@ class ViewController: UIViewController {
         } else {
             textView.contentInset = UIEdgeInsets(top: 0,
                                                  left: 0,
-                                                 bottom: keyboardFrame.height - textViewButtonConstraint.constant,
+                                                 bottom: keyboardFrame.height - bottomConstraint.constant,
                                                  right: 0)
             textView.scrollIndicatorInsets = textView.contentInset
         }
