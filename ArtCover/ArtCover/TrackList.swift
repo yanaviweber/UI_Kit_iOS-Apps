@@ -2,12 +2,25 @@
 //  TrackList.swift
 //  ArtCover
 //
-//  Created by Viktoriia Jane Ro on 22.08.2021.
+//  Created by Viktoriia Jane Ro on 23.08.2021.
 //
 
 import UIKit
 
 class TrackList: UITableViewController {
+    
+    let imageNameArray = [
+        "Michael Jackson - Price of Frame",
+        "Michael Jackson - Dirty Diana (2012 Remaster)",
+        "Michael Jackson - Billie Jean",
+        "Billy Ocean - When the Going Gets Tough, The Tough Get Going",
+        "Michael Jackson - Remember the Time",
+        "Madonna - Into the Groove",
+        "The Jacksons 5 - I’ll Be There",
+        "Whithey Houston - I Will Always Love You",
+        "Whithey Houston - I Wanna Dance With Somebody",
+        "Jenifer Lopez - On The Floor(ft. Pitbull)"
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,26 +34,28 @@ class TrackList: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return imageNameArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Title", for: indexPath)
 
-        // Configure the cell...
-
+        cell.imageView?.image = UIImage(named: imageNameArray[indexPath.item])
+        //cell.imageView?.image = UIImage(named: imageNameArray[indexPath.row])
+        cell.textLabel?.text = imageNameArray[indexPath.row]
+        cell.textLabel?.numberOfLines = 0
+        
+        
         return cell
     }
-    */
+    
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
