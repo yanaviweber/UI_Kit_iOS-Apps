@@ -22,7 +22,7 @@
                                     <segue destination="OPU-eR-Cvi" kind="embed" id="Fwz-OT-gbF"/>
                                 </connections>
                             </containerView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHm-e2-sag">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHm-e2-sag">
                                 <rect key="frame" x="374" y="20" width="630" height="462"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="630" id="R4v-LT-jUf"/>

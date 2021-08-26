@@ -13,7 +13,7 @@ class BookDetailViewController: UITableViewController {
         "Александр Швец - Паттерны Проектирования.jpg",
         "Василий Усов - Разработка приложений под iOS на основе фреймворка UI Kit.jpg",
         "Василий Усов - Разработка приложений под iOS, iPod, macOS.jpg",
-        "Владстон Феррейра Фило - Теоритический минимум по  компьютерным наукам.jpg",
+        "Владстон Феррейра Фило - Теоритический минимум по компьютерным наукам.jpg",
         "Макконел С - Совершенный код.jpg",
         "Перри Г - Миллер Д - Программирование на С.jpg",
         "Святослав Куликов - Тестирование программного обеспечения.jpg",
@@ -38,7 +38,6 @@ class BookDetailViewController: UITableViewController {
            let cell = tableView.dequeueReusableCell(withIdentifier: "Title", for: indexPath)
 
            cell.imageView?.image = UIImage(named: imageNameArray[indexPath.item])
-           //cell.imageView?.image = UIImage(named: imageNameArray[indexPath.row])
            cell.textLabel?.text = imageNameArray[indexPath.row]
            cell.textLabel?.numberOfLines = 0
            
@@ -51,6 +50,15 @@ class BookDetailViewController: UITableViewController {
            return 60
        }
     
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let viewController = parent as? ViewController {
+            let bookTitle = imageNameArray[indexPath.row]
+            viewController.titleLabel.text = bookTitle
+            viewController.titleLabel.numberOfLines = 0
+            
+            
+            viewController.imageOfTheBook.image = UIImage(named: bookTitle)
+        }
+    }
     
 }
