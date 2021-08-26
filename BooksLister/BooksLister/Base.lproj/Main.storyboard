@@ -53,21 +53,25 @@
                             <constraint firstItem="yHm-e2-sag" firstAttribute="leading" secondItem="ljD-fc-Dbp" secondAttribute="trailing" constant="20" id="zq0-kX-Vci"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageOfTheBook" destination="yHm-e2-sag" id="LbZ-II-lyY"/>
+                        <outlet property="titleLabel" destination="mnH-RM-KeF" id="fmd-sr-r1v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="29.882812499999996" y="69.53125"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Book Detail View Controller-->
         <scene sceneID="JFU-dE-076">
             <objects>
-                <tableViewController id="OPU-eR-Cvi" sceneMemberID="viewController">
+                <tableViewController id="OPU-eR-Cvi" customClass="BookDetailViewController" customModule="BooksLister" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Jv-GP-Fqj">
                         <rect key="frame" x="0.0" y="0.0" width="334" height="728"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qpc-Fv-r1v">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Title" id="qpc-Fv-r1v">
                                 <rect key="frame" x="0.0" y="24.5" width="334" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qpc-Fv-r1v" id="mWb-7o-krG">

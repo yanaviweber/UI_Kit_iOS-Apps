@@ -13,6 +13,7 @@
 		734842AC26D814AC009DC68A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734842AA26D814AC009DC68A /* Main.storyboard */; };
 		734842AE26D814AF009DC68A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734842AD26D814AF009DC68A /* Assets.xcassets */; };
 		734842B126D814AF009DC68A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734842AF26D814AF009DC68A /* LaunchScreen.storyboard */; };
+		734842B926D81F0D009DC68A /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734842B826D81F0D009DC68A /* BookDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		734842AD26D814AF009DC68A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		734842B026D814AF009DC68A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		734842B226D814AF009DC68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734842B826D81F0D009DC68A /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				734842A426D814AC009DC68A /* AppDelegate.swift */,
 				734842A626D814AC009DC68A /* SceneDelegate.swift */,
 				734842A826D814AC009DC68A /* ViewController.swift */,
+				734842B826D81F0D009DC68A /* BookDetailViewController.swift */,
 				734842AA26D814AC009DC68A /* Main.storyboard */,
 				734842AD26D814AF009DC68A /* Assets.xcassets */,
 				734842AF26D814AF009DC68A /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				734842A926D814AC009DC68A /* ViewController.swift in Sources */,
 				734842A526D814AC009DC68A /* AppDelegate.swift in Sources */,
+				734842B926D81F0D009DC68A /* BookDetailViewController.swift in Sources */,
 				734842A726D814AC009DC68A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
