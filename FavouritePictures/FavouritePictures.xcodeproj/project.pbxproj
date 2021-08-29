@@ -14,6 +14,7 @@
 		73FC842F26DB43E700FC8DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FC842D26DB43E700FC8DDC /* LaunchScreen.storyboard */; };
 		73FC843726DB44A800FC8DDC /* PreviewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FC843626DB44A800FC8DDC /* PreviewPage.swift */; };
 		73FC843926DB46D000FC8DDC /* FavouritePicturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FC843826DB46D000FC8DDC /* FavouritePicturesCell.swift */; };
+		73FC843B26DB55E200FC8DDC /* ShowPictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FC843A26DB55E200FC8DDC /* ShowPictureVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		73FC843026DB43E700FC8DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73FC843626DB44A800FC8DDC /* PreviewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPage.swift; sourceTree = "<group>"; };
 		73FC843826DB46D000FC8DDC /* FavouritePicturesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePicturesCell.swift; sourceTree = "<group>"; };
+		73FC843A26DB55E200FC8DDC /* ShowPictureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPictureVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				73FC843626DB44A800FC8DDC /* PreviewPage.swift */,
 				73FC843826DB46D000FC8DDC /* FavouritePicturesCell.swift */,
 				73FC842826DB43E300FC8DDC /* Main.storyboard */,
+				73FC843A26DB55E200FC8DDC /* ShowPictureVC.swift */,
 				73FC842B26DB43E700FC8DDC /* Assets.xcassets */,
 				73FC842D26DB43E700FC8DDC /* LaunchScreen.storyboard */,
 				73FC843026DB43E700FC8DDC /* Info.plist */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73FC843726DB44A800FC8DDC /* PreviewPage.swift in Sources */,
+				73FC843B26DB55E200FC8DDC /* ShowPictureVC.swift in Sources */,
 				73FC842326DB43E200FC8DDC /* AppDelegate.swift in Sources */,
 				73FC843926DB46D000FC8DDC /* FavouritePicturesCell.swift in Sources */,
 				73FC842526DB43E200FC8DDC /* SceneDelegate.swift in Sources */,

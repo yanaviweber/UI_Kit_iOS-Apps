@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TcM-GI-uLa">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,6 +44,7 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="favouritePicturesImageView" destination="sbm-E3-ehj" id="VeK-wl-0bS"/>
+                                    <segue destination="f8A-sL-vm6" kind="show" identifier="ShowPicture" id="fxz-4X-yTo"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -55,6 +57,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOW-bd-lHk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-288" y="-25"/>
+        </scene>
+        <!--Show PictureVC-->
+        <scene sceneID="TiS-Wm-V1v">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="f8A-sL-vm6" customClass="ShowPictureVC" customModule="FavouritePictures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vPc-Rw-Os2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZYc-yf-trt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NTr-22-POO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9a-hH-UzF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="-26"/>
         </scene>
     </scenes>
     <resources>
