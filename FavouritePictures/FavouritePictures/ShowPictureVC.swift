@@ -9,26 +9,28 @@ import UIKit
 
 class ShowPictureVC: UIViewController {
 
-    @IBOutlet weak var image: UIImageView!
     
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imageViewShowPictureVC: UIImageView!
     
+    @IBOutlet weak var titleLabelShowPictureVC: UILabel!
+    //@IBOutlet weak var image: UIImageView!
+    //IBOutlet weak var titleLabel: UILabel!
+    
+    var imageSave: UIImage?
+    
+    var pictureTitle = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageViewShowPictureVC.image = imageSave
+        
+        //image.image = imageSave
+        
+        //image.image = UIImage(named: pictureTitle)
+        //titleLabel.text = pictureTitle
+        //titleLabel.numberOfLines = 0
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

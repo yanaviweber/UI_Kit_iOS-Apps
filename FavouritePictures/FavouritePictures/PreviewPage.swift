@@ -48,10 +48,29 @@ class PreviewPage: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FavouritePicturesCell
         
-        cell.favouritePicturesImageView.image = UIImage(named: imageNameArray[indexPath.row])
+        let imageName = imageNameArray[indexPath.item]
+        let pictureImage = UIImage(named: imageName)
+        cell.favouritePicturesImageView.image = pictureImage
+        
+        
+        //cell.favouritePicturesImageView.image = UIImage(named: imageNameArray[indexPath.item])
         // Configure the cell
     
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowPicture" {
+            if let indexPath = self.collectionView.indexPathsForSelectedItems {
+                let showPictureVC = segue.destination as! ShowPictureVC
+                let cell = sender as! FavouritePicturesCell
+                showPictureVC.imageSave = cell.favouritePicturesImageView.image
+                
+                //showPictureVC.image = UIImageView(named: imageNameArray[indexPath.row])
+                //showPictureVC.pictureTitle = imageNameArray[indexPath.count]
+                //showPictureVC.image = imageNameArra[]
+            }
+        }
     }
 
 }
