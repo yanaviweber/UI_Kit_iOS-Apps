@@ -23,13 +23,29 @@
                             <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavouritePictures" id="Mw1-fe-YYT">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavouritePictures" id="Mw1-fe-YYT" customClass="FavouritePicturesCell" customModule="FavouritePictures" customModuleProvider="target">
                                 <rect key="frame" x="20" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x4Y-Wz-uJ1">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-E3-ehj">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="sbm-E3-ehj" secondAttribute="trailing" id="Gvq-Su-70m"/>
+                                        <constraint firstItem="sbm-E3-ehj" firstAttribute="top" secondItem="x4Y-Wz-uJ1" secondAttribute="top" id="V2U-8Y-zoc"/>
+                                        <constraint firstAttribute="bottom" secondItem="sbm-E3-ehj" secondAttribute="bottom" id="Xc2-3c-Jdx"/>
+                                        <constraint firstItem="sbm-E3-ehj" firstAttribute="leading" secondItem="x4Y-Wz-uJ1" secondAttribute="leading" id="YVP-tV-Ncy"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="coverImageView" destination="sbm-E3-ehj" id="V2Q-Uo-roH"/>
+                                    <outlet property="favouritePictureImage" destination="sbm-E3-ehj" id="8vr-rd-Xoa"/>
+                                    <outlet property="favouritePicturesImage" destination="sbm-E3-ehj" id="0ya-Xn-Le4"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

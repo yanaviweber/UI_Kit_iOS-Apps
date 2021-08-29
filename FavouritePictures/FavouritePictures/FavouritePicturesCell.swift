@@ -8,5 +8,6 @@
 import UIKit
 
 class FavouritePicturesCell: UICollectionViewCell {
+    @IBOutlet weak var favouritePicturesImage: UIImageView!
     
 }
