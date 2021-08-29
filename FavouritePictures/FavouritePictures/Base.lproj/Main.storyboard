@@ -65,14 +65,39 @@
                     <view key="view" contentMode="scaleToFill" id="vPc-Rw-Os2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ED6-qG-bwe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="413.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RK4-um-D41">
+                                <rect key="frame" x="16" y="496.5" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZYc-yf-trt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ED6-qG-bwe" firstAttribute="trailing" secondItem="ZYc-yf-trt" secondAttribute="trailing" id="4bF-gq-ZQr"/>
+                            <constraint firstItem="RK4-um-D41" firstAttribute="top" secondItem="ED6-qG-bwe" secondAttribute="bottom" constant="63" id="FSc-xQ-fSn"/>
+                            <constraint firstItem="RK4-um-D41" firstAttribute="top" secondItem="ED6-qG-bwe" secondAttribute="bottom" constant="63" id="Iu1-ao-ImZ"/>
+                            <constraint firstItem="ED6-qG-bwe" firstAttribute="top" secondItem="ZYc-yf-trt" secondAttribute="top" constant="20" id="NTO-j5-1n6"/>
+                            <constraint firstItem="RK4-um-D41" firstAttribute="leading" secondItem="ZYc-yf-trt" secondAttribute="leading" constant="16" id="Ncm-Yj-E92"/>
+                            <constraint firstItem="ZYc-yf-trt" firstAttribute="bottom" secondItem="RK4-um-D41" secondAttribute="bottom" constant="150" id="cF5-a1-n6K"/>
+                            <constraint firstItem="ZYc-yf-trt" firstAttribute="trailing" secondItem="RK4-um-D41" secondAttribute="trailing" constant="16" id="rSR-cd-MmS"/>
+                            <constraint firstItem="ED6-qG-bwe" firstAttribute="leading" secondItem="ZYc-yf-trt" secondAttribute="leading" id="trf-66-S0a"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NTr-22-POO"/>
+                    <connections>
+                        <outlet property="image" destination="ED6-qG-bwe" id="hTE-Fh-nID"/>
+                        <outlet property="titleLabel" destination="RK4-um-D41" id="z1g-1A-kqY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9a-hH-UzF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="-26"/>
+            <point key="canvasLocation" x="517.60000000000002" y="-26.53673163418291"/>
         </scene>
     </scenes>
     <resources>

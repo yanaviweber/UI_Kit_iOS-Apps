@@ -9,6 +9,11 @@ import UIKit
 
 class ShowPictureVC: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
