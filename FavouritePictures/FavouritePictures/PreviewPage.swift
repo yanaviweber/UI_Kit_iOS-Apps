@@ -11,7 +11,7 @@ private let reuseIdentifier = "FavouritePictures"
 
 class PreviewPage: UICollectionViewController {
 
-    let imageNameArray = [
+    var imageNameArray = [
         "Ван Гог - Звездная Ночь",
         "Ван Гог - Подсолнухи",
         "ДаВинчи - Тайная Вечеря",
@@ -23,6 +23,8 @@ class PreviewPage: UICollectionViewController {
         "Шишкин - Утро в сосновом бору",
         "Ян Вермеер - Девушка с жемчужной сережкой"
     ]
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,26 +53,42 @@ class PreviewPage: UICollectionViewController {
         let imageName = imageNameArray[indexPath.item]
         let pictureImage = UIImage(named: imageName)
         cell.favouritePicturesImageView.image = pictureImage
-        
-        
-        //cell.favouritePicturesImageView.image = UIImage(named: imageNameArray[indexPath.item])
-        // Configure the cell
+
+        // -- еще одна поытка вывести название картинки
+        //let imageTitle = imageNameArray[indexPath.item]
+        //let titleSection = UIImage(named: imageTitle)
+
     
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowPicture" {
+            
+            // старт --- вывод картинки на втором екране
+            let showPictureVC = segue.destination as! ShowPictureVC
+            let cell = sender as! FavouritePicturesCell
+            showPictureVC.imageSave = cell.favouritePicturesImageView.image
+            // конец --- вывод картинки на втором екране
+            
+            
+            //showPictureVC.pictureTitle = cell.favouritePicturesImageView.image?.description  --еще одна попытка вывести название
+            
             if let indexPath = self.collectionView.indexPathsForSelectedItems {
-                let showPictureVC = segue.destination as! ShowPictureVC
-                let cell = sender as! FavouritePicturesCell
-                showPictureVC.imageSave = cell.favouritePicturesImageView.image
                 
-                //showPictureVC.image = UIImageView(named: imageNameArray[indexPath.row])
-                //showPictureVC.pictureTitle = imageNameArray[indexPath.count]
-                //showPictureVC.image = imageNameArra[]
+                // ------- не понимаю как взять заголовок с картинки и вывести его на втором скрине в ачестве названия картины --------
+                
+                //let imageTitle = showPictureVC.pictureTitle
+                //showPictureVC.pictureTitle = imageTitle
+                
+                let imageTitle = imageNameArray[indexPath.count - 1]
+                // let imageTitle = imageNameArray[indexPath.item]
+                 showPictureVC.pictureTitle = imageTitle
+                
+                //showPictureVC.titleLabelShowPictureVC = imageNameArray[indexPath.item]
             }
+            
         }
     }
-
+    
 }
