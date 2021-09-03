@@ -9,16 +9,16 @@ import UIKit
 
 class BookDetailViewController: UITableViewController {
     let imageNameArray = [
-        "Адитья Бхаргава - Грокаем алгоритмы.jpg",
-        "Александр Швец - Паттерны Проектирования.jpg",
-        "Василий Усов - Разработка приложений под iOS на основе фреймворка UI Kit.jpg",
-        "Василий Усов - Разработка приложений под iOS, iPod, macOS.jpg",
-        "Владстон Феррейра Фило - Теоритический минимум по компьютерным наукам.jpg",
-        "Макконел С - Совершенный код.jpg",
-        "Перри Г - Миллер Д - Программирование на С.jpg",
-        "Святослав Куликов - Тестирование программного обеспечения.jpg",
-        "Тим Рафгарден - Совершенный Алгоритм - Основы.jpg",
-        "Swiftbook - Swift5-5.jpg"
+        "Aditya Bhargava - Rattling Algorithms.jpg",
+        "Alexander Shvets - Design Patterns.jpg",
+        "Vasily Usov - iOS app development based on the UI Kit framework.jpg",
+        "Vasily Usov - Application Development for iOS, iPod, macOS.jpg",
+        "Vladston Ferreira Philo - Theoretical Minimum in Computer Science.jpg",
+        "McConnel S - The Perfect Code.jpg",
+        "Perry G - Miller D - Programming in C.jpg",
+        "Svyatoslav Kulikov - Software Testing.jpg",
+        "Tim Roughgarden - The Perfect Algorithm - The Basics.jpg",
+        "Swiftbook - Swift5_5.jpg"
     ]
 
        override func viewDidLoad() {
