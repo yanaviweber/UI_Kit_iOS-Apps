@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -104,7 +105,41 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Toi-a1-mCS">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="72"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2k-NO-pSg">
+                                                        <rect key="frame" x="8" y="8" width="91" height="56"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xZ-AP-9zQ">
+                                                        <rect key="frame" x="126" y="8" width="91" height="56"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZG-wu-sic">
+                                                        <rect key="frame" x="244" y="8" width="91" height="56"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="sZG-wu-sic" firstAttribute="leading" secondItem="5xZ-AP-9zQ" secondAttribute="trailing" constant="27" id="Bec-wR-Rsm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5xZ-AP-9zQ" secondAttribute="bottom" constant="8" id="KBY-2g-2MQ"/>
+                                                    <constraint firstItem="sZG-wu-sic" firstAttribute="width" secondItem="n2k-NO-pSg" secondAttribute="width" id="O43-p6-PwK"/>
+                                                    <constraint firstItem="n2k-NO-pSg" firstAttribute="leading" secondItem="Toi-a1-mCS" secondAttribute="leading" constant="8" id="SOD-Fw-cKl"/>
+                                                    <constraint firstItem="5xZ-AP-9zQ" firstAttribute="top" secondItem="Toi-a1-mCS" secondAttribute="top" constant="8" id="WTC-Lq-qKH"/>
+                                                    <constraint firstItem="5xZ-AP-9zQ" firstAttribute="width" secondItem="n2k-NO-pSg" secondAttribute="width" id="dpi-9q-slP"/>
+                                                    <constraint firstItem="n2k-NO-pSg" firstAttribute="top" secondItem="Toi-a1-mCS" secondAttribute="top" constant="8" id="duI-OQ-uvc"/>
+                                                    <constraint firstItem="5xZ-AP-9zQ" firstAttribute="leading" secondItem="n2k-NO-pSg" secondAttribute="trailing" constant="27" id="eUT-fo-JoR"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sZG-wu-sic" secondAttribute="bottom" constant="8" id="gpZ-D3-T42"/>
+                                                    <constraint firstItem="sZG-wu-sic" firstAttribute="top" secondItem="Toi-a1-mCS" secondAttribute="top" constant="8" id="mJL-T8-kAv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="n2k-NO-pSg" secondAttribute="bottom" constant="8" id="ofg-JX-6CX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sZG-wu-sic" secondAttribute="trailing" constant="8" id="ymI-8i-7er"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRx-RH-Zlx">
                                                 <rect key="frame" x="0.0" y="77" width="343" height="72.5"/>
@@ -184,6 +219,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
