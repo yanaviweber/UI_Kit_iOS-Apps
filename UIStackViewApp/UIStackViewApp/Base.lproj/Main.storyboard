@@ -33,7 +33,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="oAB-m2-9Qf" secondAttribute="trailing" id="UqD-aS-yFa"/>
                                                     <constraint firstItem="oAB-m2-9Qf" firstAttribute="leading" secondItem="wDo-dZ-8UF" secondAttribute="leading" id="ooL-fl-sbS"/>
@@ -51,7 +50,6 @@
                                                         <rect key="frame" x="183" y="0.0" width="160" height="72.5"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="V4U-ZH-YCm" secondAttribute="bottom" id="0aX-Vd-7OU"/>
                                                     <constraint firstAttribute="trailing" secondItem="V4U-ZH-YCm" secondAttribute="trailing" id="Db2-B3-uqZ"/>
@@ -125,7 +123,6 @@
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstItem="sZG-wu-sic" firstAttribute="leading" secondItem="5xZ-AP-9zQ" secondAttribute="trailing" constant="27" id="Bec-wR-Rsm"/>
                                                     <constraint firstAttribute="bottom" secondItem="5xZ-AP-9zQ" secondAttribute="bottom" constant="8" id="KBY-2g-2MQ"/>
@@ -157,7 +154,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="rRh-lo-G3c" secondAttribute="bottom" id="DRr-gJ-siv"/>
                                                     <constraint firstItem="rRh-lo-G3c" firstAttribute="top" secondItem="cRx-RH-Zlx" secondAttribute="top" id="Goa-6z-sGU"/>
@@ -184,7 +180,6 @@
                                                         <rect key="frame" x="183" y="0.0" width="160" height="72"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstItem="0DK-4H-M2g" firstAttribute="leading" secondItem="LHY-sl-lAO" secondAttribute="leading" id="93K-gc-eA1"/>
                                                     <constraint firstItem="He9-Tc-eDd" firstAttribute="leading" secondItem="0DK-4H-M2g" secondAttribute="trailing" constant="23" id="C1T-HD-fLT"/>
@@ -208,7 +203,6 @@
                                                         <rect key="frame" x="183" y="0.0" width="160" height="72"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstItem="0JL-gN-umo" firstAttribute="width" secondItem="kAm-1E-JsF" secondAttribute="width" id="2FV-OG-Ygu"/>
                                                     <constraint firstAttribute="trailing" secondItem="0JL-gN-umo" secondAttribute="trailing" id="5CP-f3-iPt"/>
