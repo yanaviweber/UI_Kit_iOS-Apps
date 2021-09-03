@@ -143,7 +143,31 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRx-RH-Zlx">
                                                 <rect key="frame" x="0.0" y="77" width="343" height="72.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRh-lo-G3c">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="72.5"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8B-T3-PDJ">
+                                                        <rect key="frame" x="176" y="0.0" width="167" height="72.5"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="rRh-lo-G3c" secondAttribute="bottom" id="DRr-gJ-siv"/>
+                                                    <constraint firstItem="rRh-lo-G3c" firstAttribute="top" secondItem="cRx-RH-Zlx" secondAttribute="top" id="Goa-6z-sGU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="l8B-T3-PDJ" secondAttribute="trailing" id="Kc1-Su-g7s"/>
+                                                    <constraint firstItem="l8B-T3-PDJ" firstAttribute="top" secondItem="cRx-RH-Zlx" secondAttribute="top" id="Lcg-Bs-xMF"/>
+                                                    <constraint firstItem="l8B-T3-PDJ" firstAttribute="leading" secondItem="rRh-lo-G3c" secondAttribute="trailing" constant="9" id="bbX-1w-ObF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="l8B-T3-PDJ" secondAttribute="bottom" id="eWO-eV-KET"/>
+                                                    <constraint firstItem="rRh-lo-G3c" firstAttribute="leading" secondItem="cRx-RH-Zlx" secondAttribute="leading" id="n27-xc-WkH"/>
+                                                    <constraint firstItem="l8B-T3-PDJ" firstAttribute="width" secondItem="rRh-lo-G3c" secondAttribute="width" id="uGY-aK-ztn"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
