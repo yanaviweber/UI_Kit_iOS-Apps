@@ -50,54 +50,41 @@ class PreviewPage: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FavouritePicturesCell
         
-        let imageName = imageNameArray[indexPath.item]
-        let pictureImage = UIImage(named: imageName)
-        cell.favouritePicturesImageView.image = pictureImage
+        cell.favouritePicturesImageView.image = UIImage(named: imageNameArray[indexPath.row])
+        let imageName = imageNameArray[indexPath.row]
+        
+        //let pictureImage = UIImage(named: imageName)
+        //cell.favouritePicturesImageView.image = pictureImage
 
         // 02092021
         let titleImage = imageNameArray[indexPath.row]
         cell.favouritePicturesImageView.image = UIImage(named: titleImage)
         // 02092021
         
-        
-        // -- еще одна поытка вывести название картинки
-        //let imageTitle = imageNameArray[indexPath.item]
-        //let titleSection = UIImage(named: imageTitle)
+        // 03092021
+        cell.pictureTitle = imageName
+        // 03092021
 
-    
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowPicture" {
             
-            // старт --- вывод картинки на втором екране
+            // старт --- вывод картинки с превью первого екрана на втором екране
             let showPictureVC = segue.destination as! ShowPictureVC
             let cell = sender as! FavouritePicturesCell
             showPictureVC.imageSave = cell.favouritePicturesImageView.image
-            // конец --- вывод картинки на втором екране
+            // конец
             
-            
-            //showPictureVC.pictureTitle = cell.favouritePicturesImageView.image?.description  --еще одна попытка вывести название
-            
-            //if let indexPath = self.collectionView.indexPathsForSelectedItems {
-                
-                // ------- не понимаю как взять заголовок с картинки и вывести его на втором скрине в качестве названия картины --------
-                
-                //let imageTitle = showPictureVC.pictureTitle
-                //showPictureVC.pictureTitle = imageTitle
-                
-                //let imageTitle = imageNameArray[indexPath.count - 1]
-                // let imageTitle = imageNameArray[indexPath.item]
-                //showPictureVC.pictureTitle = imageTitle
-                
-                //showPictureVC.titleLabelShowPictureVC = imageNameArray[indexPath.item]
-            //}
+            //03092021 --- старт --- вывод текста в UILabel на второй экран
+            showPictureVC.pictureTitle = cell.pictureTitle
+            //03092021 --- конец
             
         }
     }
     
-    // 02092021 -- сейчас в даннный момент выводит заголовок текущей выбранной картины в консоль Xcode.Выводит не рандомное название а именно выбранной картины. НО в консоли.
+    // 02092021 -- дополнительно выводит заголовок текущей выбранной картины в консоль Xcode.Выводит не рандомное название а именно выбранной картины.
     override public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
        let imageNameSelected = imageNameArray[indexPath.row]
@@ -106,6 +93,4 @@ class PreviewPage: UICollectionViewController {
     }
     // 02092021
     
-    
-    //--- Нужно все-таки сделать так чтобы оно наконец-то вывело заголовок на втором екране под текущей выбранной картинкой и имено от той картинки которая выбрана на екране (не рандомное название); -----//
 }
