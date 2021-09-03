@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i3J-C7-Zz3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SLG-iK-Mkp">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--First Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITapBarApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDD-9h-VTy">
-                                <rect key="frame" x="54.5" y="291" width="266" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha1-IZ-NC9">
+                                <rect key="frame" x="45" y="291" width="285" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="266" id="Op9-Wn-yRW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="285" id="rP9-6b-urx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -29,40 +29,77 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
-                            <constraint firstItem="UDD-9h-VTy" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6RF-aW-EsH"/>
-                            <constraint firstItem="UDD-9h-VTy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HxN-l1-dNq"/>
+                            <constraint firstItem="Ha1-IZ-NC9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Wa-da-bQv"/>
+                            <constraint firstItem="Ha1-IZ-NC9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hX0-VB-Ne3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gsp-C8-1XC"/>
+                    <tabBarItem key="tabBarItem" title="First Screen" image="1" id="ZIy-K3-rzY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968.79999999999995" y="69.715142428785612"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="dMC-iK-lnT">
+        <!--Second Screen-->
+        <scene sceneID="uRP-DC-bcw">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="i3J-C7-Zz3" sceneMemberID="viewController">
+                <viewController id="B6R-Ri-x3l" customClass="SecondViewController" customModule="UITapBarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SWi-s8-b9V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oju-b7-A3b">
+                                <rect key="frame" x="39.5" y="291" width="296" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="285" id="YBH-wD-WFV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EoX-li-kyC"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="oju-b7-A3b" firstAttribute="centerY" secondItem="EoX-li-kyC" secondAttribute="centerY" id="Mby-Wv-Iqz"/>
+                            <constraint firstItem="oju-b7-A3b" firstAttribute="centerX" secondItem="EoX-li-kyC" secondAttribute="centerX" id="NAk-7l-fCB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second Screen" image="2" id="BTf-vS-l4N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3EF-PC-zpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="824"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9XS-Lq-PXU">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SLG-iK-Mkp" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DGa-Nh-U5w">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8j8-sg-Vz2">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Kks-OL-P0w"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="eRR-sS-ow5"/>
+                        <segue destination="B6R-Ri-x3l" kind="relationship" relationship="viewControllers" id="WEw-bX-Ih9"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mjP-xu-Yvq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20C-HP-AS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="69.715142428785612"/>
+            <point key="canvasLocation" x="-70" y="409"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="24" height="24"/>
+        <image name="2" width="30" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
