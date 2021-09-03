@@ -24,7 +24,21 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDo-dZ-8UF">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="72"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="True Wallpaper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAB-m2-9Qf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="72"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="oAB-m2-9Qf" secondAttribute="trailing" id="UqD-aS-yFa"/>
+                                                    <constraint firstItem="oAB-m2-9Qf" firstAttribute="leading" secondItem="wDo-dZ-8UF" secondAttribute="leading" id="ooL-fl-sbS"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oAB-m2-9Qf" secondAttribute="bottom" id="q86-8X-OAY"/>
+                                                    <constraint firstItem="oAB-m2-9Qf" firstAttribute="top" secondItem="wDo-dZ-8UF" secondAttribute="top" id="uSX-2v-yAA"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QxU-YC-zUG">
                                                 <rect key="frame" x="0.0" y="77" width="343" height="72.5"/>
