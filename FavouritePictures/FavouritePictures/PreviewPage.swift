@@ -12,16 +12,16 @@ private let reuseIdentifier = "FavouritePictures"
 class PreviewPage: UICollectionViewController {
 
     var imageNameArray = [
-        "Ван Гог - Звездная Ночь",
-        "Ван Гог - Подсолнухи",
-        "ДаВинчи - Тайная Вечеря",
-        "Казимир Малевич - Черный Квадрат",
-        "Рафаэль - Донна Велата",
-        "Рафаэль - Сикстинская Мадонна",
-        "Сальвадор Дали - Постоянство Памяти",
-        "Сандро Ботичелли - Афродита",
-        "Шишкин - Утро в сосновом бору",
-        "Ян Вермеер - Девушка с жемчужной сережкой"
+        "Van Gogh - Starry Night",
+        "Van Gogh - Sunflowers",
+        "DaVinci - The Last Supper",
+        "Kazimir Malevich - Black Square",
+        "Rafael - Donna Velata",
+        "Raphael - Sistine Madonna",
+        "Salvador Dali - The Permanence of Memory",
+        "Sandro Botticelli - Aphrodite",
+        "Shishkin - Morning in a Pine Forest",
+        "Jan Vermeer - The Girl with the Pearl Earring"
     ]
     
 
