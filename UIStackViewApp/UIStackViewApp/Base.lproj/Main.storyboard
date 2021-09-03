@@ -44,10 +44,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QxU-YC-zUG">
                                                 <rect key="frame" x="0.0" y="77" width="343" height="72.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tMf-oa-gj4">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="tMf-oa-gj4">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="72.5"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-ZH-YCm">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-ZH-YCm">
                                                         <rect key="frame" x="183" y="0.0" width="160" height="72.5"/>
                                                     </imageView>
                                                 </subviews>
@@ -71,7 +71,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EL-Jp-yrE">
                                                 <rect key="frame" x="0.0" y="0.0" width="169" height="149"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0TA-cL-uP8">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="0TA-cL-uP8">
                                                         <rect key="frame" x="0.0" y="0.0" width="169" height="149"/>
                                                     </imageView>
                                                 </subviews>
@@ -86,7 +86,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIL-sr-o4h">
                                                 <rect key="frame" x="174" y="0.0" width="169" height="149"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9FM-Mt-3hj">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="9FM-Mt-3hj">
                                                         <rect key="frame" x="0.0" y="0.0" width="169" height="149"/>
                                                     </imageView>
                                                 </subviews>
@@ -177,10 +177,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHY-sl-lAO">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="72"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0DK-4H-M2g">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="0DK-4H-M2g">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="72"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="He9-Tc-eDd">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="He9-Tc-eDd">
                                                         <rect key="frame" x="183" y="0.0" width="160" height="72"/>
                                                     </imageView>
                                                 </subviews>
@@ -201,10 +201,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qi5-Ac-L9A">
                                                 <rect key="frame" x="0.0" y="77" width="343" height="72"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kAm-1E-JsF">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="kAm-1E-JsF">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="72"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-gN-umo">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-gN-umo">
                                                         <rect key="frame" x="183" y="0.0" width="160" height="72"/>
                                                     </imageView>
                                                 </subviews>
@@ -243,6 +243,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="1920" height="1280"/>
+        <image name="2" width="1920" height="1280"/>
+        <image name="3" width="1920" height="1280"/>
+        <image name="4" width="1920" height="1280"/>
+        <image name="5" width="1920" height="1280"/>
+        <image name="6" width="1920" height="1280"/>
+        <image name="7" width="1920" height="1280"/>
+        <image name="8" width="1920" height="1280"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
