@@ -18,11 +18,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://www.apple.com")
+        
+        //for button "Return" allows data from urlTextField
+        urlTextField.delegate = self
+        
+        
+        let homePage = "https://www.apple.com"
+        let url = URL(string: homePage)
         let request = URLRequest(url: url!)
         
         
+        urlTextField.text = homePage
+        
         webView.load(request)
+        
+        //this enable parameter allows you to show navigation in the browser
         webView.allowsBackForwardNavigationGestures = true
     }
 
@@ -35,3 +45,22 @@ class ViewController: UIViewController {
     
 }
 
+extension ViewController: UITextFieldDelegate {
+    
+    
+    //this method allows you to return data from a text field
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let urlString = textField.text!
+        let url = URL(string: urlString)!
+        let request = URLRequest(url: url)
+        
+        webView.load(request)
+        
+        
+        //for our keyboard is hidden after tap in the "Return" button
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+}
