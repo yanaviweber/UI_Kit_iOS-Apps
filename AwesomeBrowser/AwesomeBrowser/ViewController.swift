@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         //for button "Return" allows data from urlTextField
         urlTextField.delegate = self
         
+        //enable for update url-address when page is loading
+        webView.navigationDelegate = self
         
         let homePage = "https://www.apple.com"
         let url = URL(string: homePage)
@@ -37,15 +39,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func backButtonAction(_ sender: Any) {
+        if webView.canGoBack {
+            webView.goBack()
+        }
     }
     
     @IBAction func forwardButtonAction(_ sender: Any) {
+        if webView.canGoForward {
+            webView.goForward()
+        }
     }
     
     
 }
 
-extension ViewController: UITextFieldDelegate {
+extension ViewController: UITextFieldDelegate, WKNavigationDelegate {
     
     
     //this method allows you to return data from a text field
@@ -61,6 +69,16 @@ extension ViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         
         return true
+    }
+    
+    
+    //implementation for update url-address when page is loading
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        urlTextField.text = webView.url?.absoluteString
+        
+        //possibility to enable buttons "Back", "Forward"
+        backButton.isEnabled = webView.canGoBack
+        forwardButton.isEnabled = webView.canGoForward
     }
     
 }
