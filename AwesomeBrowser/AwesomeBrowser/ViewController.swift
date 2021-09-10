@@ -16,7 +16,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let url = URL(string: "https://www.apple.com")
+        let request = URLRequest(url: url!)
+        
+        
+        webView.load(request)
+        webView.allowsBackForwardNavigationGestures = true
     }
 
 
