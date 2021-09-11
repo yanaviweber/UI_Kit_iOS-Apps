@@ -41,15 +41,15 @@
         <!--Page View Controller-->
         <scene sceneID="SPH-cI-889">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2yI-PT-CNy" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2yI-PT-CNy" customClass="PageViewController" customModule="UIPageViewApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8w-Vn-6w3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="826" y="70"/>
         </scene>
-        <!--View Controller-->
+        <!--Content View Controller-->
         <scene sceneID="Byp-jq-a8S">
             <objects>
-                <viewController id="QgO-uz-Sd8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContentViewController" id="QgO-uz-Sd8" customClass="ContentViewController" customModule="UIPageViewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q54-SC-3oB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
