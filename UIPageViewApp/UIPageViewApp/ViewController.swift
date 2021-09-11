@@ -8,12 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    //this method allows to call the method startPresentation
+    override func viewDidAppear(_ animated: Bool) {
+        /*
+         the viewDidAppear method is triggered immediately after the application is loaded, after the View is displayed on the screen
+         */
+        super.viewDidAppear(animated)
+        
+        startPresentation()
     }
-
+    
+    
+    // method which runs PageViewController
+    func startPresentation(){
+        if let pageViewController = storyboard?.instantiateViewController(identifier: "PageViewController") as? PageViewController {
+            
+            // if we could show ViewController, - we need show View Controller
+            present(pageViewController, animated: true, completion: nil)
+        }
+    }
 
 }
 

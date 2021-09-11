@@ -13,22 +13,19 @@ class ContentViewController: UIViewController {
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    var presentText = ""
+    var emoji = ""
+    var currentPage = 0 // number of the current page
+    var numberOfPages = 0 // total number of pages
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        presentTextLabel.text = presentText
+        emojiLabel.text = emoji
+        pageControl.currentPage = currentPage
+        pageControl.numberOfPages = numberOfPages
+
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
