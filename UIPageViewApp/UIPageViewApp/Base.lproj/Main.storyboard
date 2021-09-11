@@ -83,6 +83,11 @@
                             <constraint firstItem="NGR-1R-k33" firstAttribute="centerX" secondItem="PEp-0m-qiK" secondAttribute="centerX" id="rkf-Y0-tao"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="yLa-o8-YVp" id="ZcK-TD-yIK"/>
+                        <outlet property="pageControl" destination="NGR-1R-k33" id="8AJ-su-SnM"/>
+                        <outlet property="presentTextLabel" destination="9BK-co-zTO" id="toJ-r0-dPT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7M-VA-J8m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
