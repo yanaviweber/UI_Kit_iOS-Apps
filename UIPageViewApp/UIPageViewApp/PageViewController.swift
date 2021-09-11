@@ -43,6 +43,10 @@ class PageViewController: UIPageViewController {
         guard index >= 0 else { return nil }
         guard index < presentScreenContent.count else {
             
+            //сreating a key that allows you to save the state of the presentation before it closes
+            let userDefaults = UserDefaults.standard
+            userDefaults.set(true, forKey: "presentationWasViewed")
+            
             //method which close controller
             dismiss(animated: true, completion: nil)
             

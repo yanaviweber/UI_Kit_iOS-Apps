@@ -22,10 +22,17 @@ class ViewController: UIViewController {
     
     // method which runs PageViewController
     func startPresentation(){
-        if let pageViewController = storyboard?.instantiateViewController(identifier: "PageViewController") as? PageViewController {
-            
-            // if we could show ViewController, - we need show View Controller
-            present(pageViewController, animated: true, completion: nil)
+        
+        // extend realization for special key when presentation is closed
+        let userDefaults = UserDefaults.standard
+        let presentationWasViewed = userDefaults.bool(forKey: "presentationWasViewed")
+        
+        if presentationWasViewed == false {
+            if let pageViewController = storyboard?.instantiateViewController(identifier: "PageViewController") as? PageViewController {
+                
+                // if we could show ViewController, - we need show View Controller
+                present(pageViewController, animated: true, completion: nil)
+            }
         }
     }
 
