@@ -13,7 +13,7 @@ class PageViewController: UIPageViewController {
     "Первая страница презентации, - рассказывает о сути приложения",
     "Вторая страница презентации, - рассказывает о какой-то фишке приложения",
     "Третья страница презентации, - показывает еще что-то очен интересное в виде картинки и анимации",
-    "Последяя страница презентации, - напутствие на добрый путь с каким-то приятным пожеланием пользователю"
+    "Последяя страница презентации, - какое-то приятное пожелание пользователю"
     
     ]
     
@@ -23,6 +23,9 @@ class PageViewController: UIPageViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // we need to assign the class as a delegate of the protocol datasource
+        dataSource = self
 
         //declare method ContentViewController
         if let contentViewController = showViewControllerAtIndex(0){
@@ -48,4 +51,28 @@ class PageViewController: UIPageViewController {
         return contentViewController
     }
 
+}
+
+extension PageViewController: UIPageViewControllerDataSource {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        
+        // get number of current page
+        var pageNumber = (viewController as! ContentViewController).currentPage
+        
+        pageNumber -= 1
+        
+        return showViewControllerAtIndex(pageNumber)
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        
+        // get number of current page
+        var pageNumber = (viewController as! ContentViewController).currentPage
+        
+        pageNumber += 1
+        
+        return showViewControllerAtIndex(pageNumber)
+    }
+    
+    
 }

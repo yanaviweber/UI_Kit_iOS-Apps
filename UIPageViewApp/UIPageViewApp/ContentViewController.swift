@@ -24,8 +24,8 @@ class ContentViewController: UIViewController {
 
         presentTextLabel.text = presentText
         emojiLabel.text = emoji
-        pageControl.currentPage = currentPage
         pageControl.numberOfPages = numberOfPages
+        pageControl.currentPage = currentPage
 
     }
 }
