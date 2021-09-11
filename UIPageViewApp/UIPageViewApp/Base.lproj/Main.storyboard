@@ -70,20 +70,36 @@
                                 <rect key="frame" x="126.5" y="619" width="122" height="28"/>
                                 <color key="currentPageIndicatorTintColor" systemColor="systemYellowColor"/>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-yV-FYS">
+                                <rect key="frame" x="70" y="517" width="235" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9Mf-FU-kSv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="bKq-FL-B8E"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Закрыть презентацию"/>
+                                <connections>
+                                    <action selector="closePresentationAction:" destination="QgO-uz-Sd8" eventType="touchUpInside" id="dGc-V5-pk7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PEp-0m-qiK"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="yLa-o8-YVp" firstAttribute="centerY" secondItem="PEp-0m-qiK" secondAttribute="centerY" id="TVZ-7z-wCM"/>
+                            <constraint firstItem="NGR-1R-k33" firstAttribute="top" secondItem="Rnp-yV-FYS" secondAttribute="bottom" constant="57" id="X3p-0O-ACT"/>
                             <constraint firstItem="PEp-0m-qiK" firstAttribute="trailing" secondItem="9BK-co-zTO" secondAttribute="trailing" constant="16" id="aK7-fs-Lae"/>
                             <constraint firstItem="PEp-0m-qiK" firstAttribute="bottom" secondItem="NGR-1R-k33" secondAttribute="bottom" constant="20" id="fuV-Zn-p0x"/>
                             <constraint firstItem="9BK-co-zTO" firstAttribute="leading" secondItem="PEp-0m-qiK" secondAttribute="leading" constant="16" id="hde-Ql-LXt"/>
                             <constraint firstItem="9BK-co-zTO" firstAttribute="top" secondItem="PEp-0m-qiK" secondAttribute="top" constant="113" id="hkL-cU-wWY"/>
+                            <constraint firstItem="Rnp-yV-FYS" firstAttribute="centerX" secondItem="PEp-0m-qiK" secondAttribute="centerX" id="n6v-kf-jy4"/>
                             <constraint firstItem="yLa-o8-YVp" firstAttribute="centerX" secondItem="PEp-0m-qiK" secondAttribute="centerX" id="nZA-IF-g5C"/>
                             <constraint firstItem="NGR-1R-k33" firstAttribute="centerX" secondItem="PEp-0m-qiK" secondAttribute="centerX" id="rkf-Y0-tao"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="closePresentationButton" destination="Rnp-yV-FYS" id="Ao9-sp-wjx"/>
                         <outlet property="emojiLabel" destination="yLa-o8-YVp" id="ZcK-TD-yIK"/>
                         <outlet property="pageControl" destination="NGR-1R-k33" id="8AJ-su-SnM"/>
                         <outlet property="presentTextLabel" destination="9BK-co-zTO" id="toJ-r0-dPT"/>
@@ -95,6 +111,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

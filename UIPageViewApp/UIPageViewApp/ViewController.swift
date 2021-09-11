@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         startPresentation()
+        
     }
     
     
