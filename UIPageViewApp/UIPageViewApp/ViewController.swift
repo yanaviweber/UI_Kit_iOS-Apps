@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     
     // method which runs PageViewController
-    func startPresentation(){
+  func startPresentation(){
         
         // extend realization for special key when presentation is closed
         let userDefaults = UserDefaults.standard
@@ -33,9 +33,27 @@ class ViewController: UIViewController {
                 
                 // if we could show ViewController, - we need show View Controller
                 present(pageViewController, animated: true, completion: nil)
+                
+                //попытка вывести кнопку на последний скрин
+                //ContentViewController.closePresentationAction()
             }
         }
+        
+
     }
 
+ 
+    /*
+    func startPresentation(){
+        
+            if let pageViewController = storyboard?.instantiateViewController(identifier: "PageViewController") as? PageViewController {
+                
+                // if we could show ViewController, - we need show View Controller
+                present(pageViewController, animated: true, completion: nil)
+            }
+    }
+*/
+    
 }
+
 

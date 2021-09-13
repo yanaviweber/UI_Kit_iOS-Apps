@@ -73,6 +73,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-yV-FYS">
                                 <rect key="frame" x="70" y="517" width="235" height="45"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="9Mf-FU-kSv"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="bKq-FL-B8E"/>
@@ -80,7 +83,7 @@
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Закрыть презентацию"/>
                                 <connections>
-                                    <action selector="closePresentationAction:" destination="QgO-uz-Sd8" eventType="touchUpInside" id="dGc-V5-pk7"/>
+                                    <action selector="closePresentationAction:" destination="QgO-uz-Sd8" eventType="touchUpInside" id="91C-H9-YTw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -99,7 +102,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="closePresentationButton" destination="Rnp-yV-FYS" id="Ao9-sp-wjx"/>
+                        <outlet property="closePresentationButton" destination="Rnp-yV-FYS" id="29W-2z-Re1"/>
                         <outlet property="emojiLabel" destination="yLa-o8-YVp" id="ZcK-TD-yIK"/>
                         <outlet property="pageControl" destination="NGR-1R-k33" id="8AJ-su-SnM"/>
                         <outlet property="presentTextLabel" destination="9BK-co-zTO" id="toJ-r0-dPT"/>
