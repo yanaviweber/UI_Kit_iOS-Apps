@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         swipesObservers()
+        tapObserver()
     }
 
     func swipesObservers() {
@@ -39,7 +40,22 @@ class ViewController: UIViewController {
         swipeDown.direction = .down
         self.view.addGestureRecognizer(swipeDown)
     }
-
+    
+    func tapObserver(){
+        
+        let tripleTap = UITapGestureRecognizer(target: self, action: #selector(tripleTapAction))
+        tripleTap.numberOfTapsRequired = 3
+        self.view.addGestureRecognizer(tripleTap)
+        
+        
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(doubleTpAction))
+        doubleTap.require(toFail: tripleTap)
+        doubleTap.numberOfTapsRequired = 2
+        self.view.addGestureRecognizer(doubleTap)
+        
+    }
+    
+    
     @objc func handleSwipes(gester: UISwipeGestureRecognizer) {
         
         switch gester.direction {
@@ -57,6 +73,14 @@ class ViewController: UIViewController {
         
     }
     
+    @objc func tripleTapAction() {
+        label.text = "Triple taped was recognized"
+    }
+    
+    
+    @objc func doubleTpAction() {
+        label.text = "Double taped was recognized"
+    }
     
 }
 
