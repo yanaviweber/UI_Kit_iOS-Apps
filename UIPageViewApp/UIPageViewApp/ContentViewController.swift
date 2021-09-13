@@ -42,8 +42,6 @@ class ContentViewController: UIViewController {
         
         //еще раз попытка показать скрытую кнопку именно на последнем скрине
         //closePresentationButton.isHidden = false
-        
-
     }
     
     //тут кнопка которая должна появится при просмотре последнего скрина
