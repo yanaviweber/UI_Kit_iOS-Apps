@@ -23,15 +23,14 @@ class ContentViewController: UIViewController {
     var currentPage = 0 // number of the current page
     var numberOfPages = 0 // total number of pages
     
+    var presentationButtonIsHidden = true // -- button variable
   
-    var closePresButton: UIButton? // переменная для вывода кнопки на глобальный уровень
-    
+    var closePresButton: UIButton? // variable for set button on the global visibility level
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //кнопка изначально скрыта (пока не дойдет до последнего скрина)
-        closePresentationButton.isHidden = true
-        
+        closePresentationButton.isHidden = presentationButtonIsHidden // -- save value for the button
+                
         
         presentTextLabel.text = presentText
         emojiLabel.text = emoji
@@ -40,16 +39,15 @@ class ContentViewController: UIViewController {
         
         closePresentationButton = closePresButton
         
-        //еще раз попытка показать скрытую кнопку именно на последнем скрине
-        //closePresentationButton.isHidden = false
     }
-    
-    //тут кнопка которая должна появится при просмотре последнего скрина
 
     @IBAction func closePresentationAction(_ sender: UIButton) {
         
-        let closePresentation = PageViewController()
-        closePresentation.closePresentationButtonFunc()
+        // -- close presentation
+          let userDefaults = UserDefaults.standard
+          userDefaults.set(true, forKey: "presentationWasViewed")
+          
+          dismiss(animated: true, completion: nil)
         
     }
 

@@ -12,13 +12,13 @@ class PageViewController: UIPageViewController {
     let presentScreenContent = [
     "Первая страница презентации, - рассказывает о сути приложения",
     "Вторая страница презентации, - рассказывает о какой-то фишке приложения",
-    "Третья страница презентации, - показывает еще что-то очен интересное в виде картинки и анимации",
-    "Последяя страница презентации, - какое-то приятное пожелание пользователю", ""
+    "Третья страница презентации, - показывает еще что-то очень интересное в виде картинки и анимации",
+    "Последяя страница презентации, - какое-то приятное пожелание пользователю"
     
     ]
     
     let emojiArray = [
-    "😉","👩‍💻","😎","😍", ""
+    "😉","👩‍💻","😎","😍"
     ]
     
     override func viewDidLoad() {
@@ -35,8 +35,7 @@ class PageViewController: UIPageViewController {
             setViewControllers([contentViewController], direction: .forward, animated: true, completion: nil)
                     
         }
-        
-        closePresentationButtonFunc()
+
     }
     
   
@@ -52,31 +51,11 @@ class PageViewController: UIPageViewController {
         contentViewController.currentPage = index
         contentViewController.numberOfPages = presentScreenContent.count
         
-        //contentViewController.buttonForClose = closePresentationButtonFunc
-        
-        // пока оно выводит просто свайпом закрытие презентации
-        if contentViewController.currentPage == presentScreenContent.count-1{
-            closePresentationButtonFunc()
-            
-        }
+        let isLastPage = (index == presentScreenContent.count - 1)
+        contentViewController.presentationButtonIsHidden = !isLastPage // -- control the appearance of the button
        
         return contentViewController
     }
-    
-    //функция которая работает с параметрами закрытия презентации
-    func closePresentationButtonFunc(){
-           
-            //-------------
-            //сreating a key that allows you to save the state of the presentation before it closes
-            let userDefaults = UserDefaults.standard
-            userDefaults.set(true, forKey: "presentationWasViewed")
-            
-        
-            //method which close controller
-            dismiss(animated: true, completion: nil)
-            //------------
-    }
-    
 }
 
 
