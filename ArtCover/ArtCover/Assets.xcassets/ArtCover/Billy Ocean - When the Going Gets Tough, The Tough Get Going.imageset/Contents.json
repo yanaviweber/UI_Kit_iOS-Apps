@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Billy Ocean - When the Going Gets Tough, The Tough Get Going.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
